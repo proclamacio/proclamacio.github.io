@@ -24,27 +24,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=ca'></script>
 
-
-
-  <script type="text/javascript">
-      var verifyCallback = function(response) {
-        alert(response);
-      };
-
-
-      grecaptcha.render('recappp', {
-          'sitekey' : '6Ld7sP4SAAAAANKypOudIDFRGrwB-ltixH-0D1UW"',
-          'callback' : verifyCallback,
-          'theme' : 'light'
-        });
-
-
-
-  
-      };
-    </script>
 
 
 
@@ -143,22 +123,34 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
 
-<script type="text/javascript">
-//       var calloback = function() {
 
-// $( "#sendo" ).show('slow');
-//       };
+  <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=ca'></script>
 
 
 
+  <script type="text/javascript">
+  
+      var verifyCallback = function(response) {
+        alert(response);
+        $( "#sendo" ).show('slow');
+
+      };
 
 
+      grecaptcha.render('recappp', {
+          'sitekey' : '6Ld7sP4SAAAAANKypOudIDFRGrwB-ltixH-0D1UW"',
+          'callback' : verifyCallback,
+          'theme' : 'light'
+        });
 
-
-
-
-
+ 
+      };
     </script>
+
+
+
+
+
 
 
 </body>
