@@ -34,10 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .button {
     border: 0px;background: #5bd0ff;
-background: -moz-linear-gradient(left, #5bd0ff 0%, #009ddb 100%);
-background: -webkit-linear-gradient(left, #5bd0ff 0%,#009ddb 100%);
-background: linear-gradient(to right, #5bd0ff 0%,#009ddb 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5bd0ff', endColorstr='#009ddb',GradientType=1 );
+background: #00adef;
 
 }
 
