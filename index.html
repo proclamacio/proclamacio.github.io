@@ -46,7 +46,7 @@
       grecaptcha.render('recappp', {
           'sitekey' : '6Ld7sP4SAAAAANKypOudIDFRGrwB-ltixH-0D1UW"',
           'callback' : verifyCallback,
-          'theme' : 'dark'
+          'theme' : 'light'
         });
 
 
@@ -96,7 +96,6 @@
     </section>
     
 
-<div id="recappp"></div>
 
 <div class="backgrounder">
 
@@ -116,9 +115,8 @@
         </div>
 
 
-<div class="g-recaptcha" data-callback="calloback" data-sitekey="6Ld7sP4SAAAAANKypOudIDFRGrwB-ltixH-0D1UW"></div>
+<div id="recappp"></div>
 
-<input type="hidden" id="g-recaptcha-response">
 
 
 
@@ -129,7 +127,7 @@
 
 
 
-<form action="javascript:alert(grecaptcha.getResponse(widgetId1));">
+<form action="javascript:alert(grecaptcha.getResponse(widgetId1));" style="display: none">
       <div id="example1"></div>
       <br>
       <input type="submit" value="getResponse">
@@ -164,10 +162,10 @@
 
 
 <script type="text/javascript">
-      var calloback = function() {
+//       var calloback = function() {
 
-$( "#sendo" ).show('slow');
-      };
+// $( "#sendo" ).show('slow');
+//       };
 
 
 
