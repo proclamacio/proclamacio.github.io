@@ -77,6 +77,10 @@ form#theform {
     text-align: center
 }
 
+h3.title {
+    text-align: center;
+}
+
 .header .img {
     height: 15rem;
     margin-bottom: 2rem
