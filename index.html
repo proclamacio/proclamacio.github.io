@@ -32,15 +32,6 @@
       var verifyCallback = function(response) {
         alert(response);
       };
-      var widgetId1;
-      var widgetId2;
-      var onloadCallback = function() {
-        // Renders the HTML element with id 'example1' as a reCAPTCHA widget.
-        // The id of the reCAPTCHA widget is assigned to 'widgetId1'.
-        widgetId1 = grecaptcha.render('example1', {
-          'sitekey' : '6Ld7sP4SAAAAANKypOudIDFRGrwB-ltixH-0D1UW"',
-          'theme' : 'light'
-        });
 
 
       grecaptcha.render('recappp', {
@@ -123,15 +114,6 @@
 
         <button class="button editable" id="sendo" style="margin-top: 20px; display: none" type="submit" data-editfield="subscribe">Vull signar</button>
       </form>
-
-
-
-
-<form action="javascript:alert(grecaptcha.getResponse(widgetId1));" style="display: none">
-      <div id="example1"></div>
-      <br>
-      <input type="submit" value="getResponse">
-    </form>
 
 
 
