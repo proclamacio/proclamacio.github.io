@@ -38,6 +38,13 @@ background: #00adef;
 
 }
 
+header#home h1 {
+    color: #fff;
+}
+
+header#home p {
+    color: #fff;
+}
 
 #manifest p {
     font-size: 18px;
@@ -68,7 +75,7 @@ background: -moz-linear-gradient(left, #5bd0ff 0%, #009ddb 100%);
 background: -webkit-linear-gradient(left, #5bd0ff 0%,#009ddb 100%);
 background: linear-gradient(to right, #5bd0ff 0%,#009ddb 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5bd0ff', endColorstr='#009ddb',GradientType=1 );
-    
+
 }
 .header+section {
     border-top: 0
