@@ -27,12 +27,13 @@
 
 <script type="text/javascript">
       var verifyCallback = function(response) {
-        alert(response);
+
+$( "#lel" ).html(response);
+
+
       };
 
       var onloadCallback = function() {
-        // Renders the HTML element with id 'example1' as a reCAPTCHA widget.
-        // The id of the reCAPTCHA widget is assigned to 'widgetId1'.
    
         grecaptcha.render('example3', {
           'sitekey' : '6Ld7sP4SAAAAANKypOudIDFRGrwB-ltixH-0D1UW',
@@ -104,7 +105,7 @@
 
 
 
-
+<div id="lel"></div>
 
         <button class="button editable" id="sendo" style="margin-top: 20px; display: none" type="submit" data-editfield="subscribe">Vull signar</button>
       </form>
