@@ -154,6 +154,8 @@ form#theform {
 .navigation .navigation-title h1.title {
     font-size: 2rem;
     color: white;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
 }
 .navigation .container {
     padding-bottom: 0;
