@@ -28,10 +28,17 @@
 <script type="text/javascript">
       var verifyCallback = function(response) {
 
-$( "#lel" ).html(response);
+// $( "#lel" ).html(response);
 
+// https://www.google.com/recaptcha/api/siteverify?secret=6Ld7sP4SAAAAAGVg8Wf0nazXoHktujxgguJ0qUMn&response=03AJzQf7OsnG2RtzW33a0tIPZlzDvYvf0_0bxpQPquU4D4iZ-B9s0SpdQn98CUnvucrOeayJ-jr7-1QMRSqecTgzbLzqBppbmEpXaJeKZ7rJzkEDW_Ny_dROuBalALbzAb7KU_m9_PJcP2tj4Z9SlhMHPW-6bfk9yqO9FlDMOcpFgGFUmdg0fzOooUYFa6QxUcdsrzBYB8eRx4n2fEuXQOudyR12SKrH1GALjoFq002tpibnzn9BFd-SrTrrqGcFnLcXuv8UcSDsloGGgfm9L3IOV3dEk9_6BcV06GHxSuI4qNnXoAW8AOj0TQGGylYL0vwwAE5cy1aaBFVUnkynG1i3NV5caPJOgtQdBOyJduIXe0YEqn0V8ZGwPCLCvbwwZQyj_3q6fpB6k8-qdnpNmqU1xAsNf0JRxBvuLP9VKy6ITLaEsUiarGdOVXaRVsPzLS41f8awXdVtK_
+
+$.getJSON( "https://www.google.com/recaptcha/api/siteverify?secret=6Ld7sP4SAAAAAGVg8Wf0nazXoHktujxgguJ0qUMn&response="+response, function( json ) {
+  console.log(json);
+ });
 
       };
+
+      
 
       var onloadCallback = function() {
    
@@ -110,6 +117,8 @@ $( "#lel" ).html(response);
         <button class="button editable" id="sendo" style="margin-top: 20px; display: none" type="submit" data-editfield="subscribe">Vull signar</button>
       </form>
 
+
+<!-- https://www.google.com/recaptcha/api/siteverify?secret=6Ld7sP4SAAAAAGVg8Wf0nazXoHktujxgguJ0qUMn&response=03AJzQf7OsnG2RtzW33a0tIPZlzDvYvf0_0bxpQPquU4D4iZ-B9s0SpdQn98CUnvucrOeayJ-jr7-1QMRSqecTgzbLzqBppbmEpXaJeKZ7rJzkEDW_Ny_dROuBalALbzAb7KU_m9_PJcP2tj4Z9SlhMHPW-6bfk9yqO9FlDMOcpFgGFUmdg0fzOooUYFa6QxUcdsrzBYB8eRx4n2fEuXQOudyR12SKrH1GALjoFq002tpibnzn9BFd-SrTrrqGcFnLcXuv8UcSDsloGGgfm9L3IOV3dEk9_6BcV06GHxSuI4qNnXoAW8AOj0TQGGylYL0vwwAE5cy1aaBFVUnkynG1i3NV5caPJOgtQdBOyJduIXe0YEqn0V8ZGwPCLCvbwwZQyj_3q6fpB6k8-qdnpNmqU1xAsNf0JRxBvuLP9VKy6ITLaEsUiarGdOVXaRVsPzLS41f8awXdVtK_ -->
 
 
     </section>
