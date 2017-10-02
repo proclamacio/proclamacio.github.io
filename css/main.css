@@ -33,9 +33,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button {
-    border: 0px;background: #5bd0ff;
-background: #00adef;
-
+    border: 0px;
+    background: #0089be;
 }
 
 header#home h1 {
