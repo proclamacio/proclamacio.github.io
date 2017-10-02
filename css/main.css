@@ -139,7 +139,7 @@ form#theform {
 
 
 .navigation {
-    background: white;
+    background: #00adef;
     border-bottom: 0px;
     display: block;
     height: 5.2rem;
@@ -153,6 +153,7 @@ form#theform {
 }
 .navigation .navigation-title h1.title {
     font-size: 2rem;
+    color: white;
 }
 .navigation .container {
     padding-bottom: 0;
@@ -181,14 +182,13 @@ form#theform {
     color: var(--main-text-color);
     position: relative
 }
-.navigation .navigation-link,
-.navigation .navigation-title,
-.navigation .title {
+.navigation .navigation-link, .navigation .navigation-title, .navigation .title {
     display: inline;
     font-size: 1.6rem;
     line-height: 5.2rem;
     padding: 0;
-    text-decoration: none
+    text-decoration: none;
+    color: white;
 }
 .navigation .navigation-link.active {
     color: var(--main-text-color)
